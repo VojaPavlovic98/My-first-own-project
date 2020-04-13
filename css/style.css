@@ -1,0 +1,653 @@
+
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+ 
+}
+#menu-show {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 99;
+   
+}
+#menu-show .ham {
+    color: #000;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#menu-show .ham:hover{
+    transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    -moz-transform:scale(0.7);
+    -ms-transform:scale(0.7);
+    -o-transform:scale(0.7);
+}
+#ham-unutra {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#ham-unutra:hover {
+    transform: scale(1.4) rotate(90deg);
+    -webkit-transform: scale(1.4) rotate(90deg);
+    -moz-transform: scale(1.4) rotate(90deg);
+    -ms-transform: scale(1.4) rotate(90deg);
+    -o-transform: scale(1.4) rotate(90deg);
+}
+#nav-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#nav-mobile li a {
+    font-family: kanit;
+    font-size: 38px;
+    position: relative;
+    margin-top: 25px !important;
+    text-transform: uppercase;
+}
+#nav-mobile li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    border-bottom: 0.5px solid #fff;
+    display: block;
+    height: 10%;
+    background: #fff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#nav-mobile li a:hover::before {
+    width: 100%;
+}
+body {
+    box-sizing: border-box;
+}
+.first-screen {
+    height: 100vh;
+}
+.first-screen .row {
+    height: 100%;
+    
+}
+.first-screen .row .col {
+    height: 100%;
+    
+}
+.first-screen .row .col  .title {
+    height: 100%;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-screen .row .col  .title  h1 {
+    font-family:'kanit';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.first-screen .row .col  .title  h3 {
+    font-family:'kanit';
+    margin-top: 15px !important;
+    
+}
+.first-screen .row .col  .title  p {
+    font-family:'kanit';
+    font-size: 20px;
+    margin-top: 15px !important;
+    width: 80%;
+    margin: auto;
+   
+}
+.first-screen .row .col  .img {
+    animation-duration: 1.5s;
+   
+    height: 100%;
+    background: url('../img/thumb-1920-693150.jpg');
+    filter: grayscale(0%);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    z-index:-1;
+    -webkit-filter: grayscale(10%);
+}
+
+
+
+/*second start*/
+.second-screen {
+    height: 100vh;
+}
+.second-screen .row {
+    height: 100%;
+    
+}
+.second-screen .row .col {
+    height: 100%;
+    
+}
+.second-screen .row .col  .title {
+    height: 100%;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second-screen .row .col  .title  h1 {
+    text-transform: uppercase; 
+    font-weight: bold;
+    font-family: kanit;
+}
+.second-screen .row .col .title p {
+    font-family:'kanit';
+    font-size: 20px;
+    margin-top: 15px !important;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.second-screen .row .col .title a {
+    margin-top: 35px !important;
+    font-family: kanit;
+    color: #000;
+    padding: 10px 70px !important;
+    position: relative;
+    transition:1s;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    -ms-transition:1s;
+    -o-transition:1s;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.second-screen .row .col .title a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 5%;
+    height: 25%;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.second-screen .row .col .title a:hover::before {
+    width: 100%;
+    height: 100%;
+    
+}
+.second-screen .row .col .title a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 5%;
+    height: 25%;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.second-screen .row .col .title a:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.second-screen .row .col  .img {
+    height: 100%;
+    background: url('../img/men-having-their-haircut-1813272.jpg');
+    filter: grayscale(0%);
+
+
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-filter: grayscale(10%);
+}
+
+/*third screen*/
+.third-screen {
+    height: 100vh;
+}
+.third-screen .row {
+    height: 100%;
+    
+}
+.third-screen .row .col {
+    height: 100%;
+    
+}
+.third-screen .row .col  .title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.third-screen .row .col  .title  h1 {
+    text-transform: uppercase; 
+    font-family: kanit;
+    padding:10px 0 !important;
+    font-weight: bold;
+}
+.third-screen .row .col .title p {
+    font-family:'kanit';
+    font-size: 20px;
+    margin-top: 15px !important;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.third-screen .row .col .title a {
+    margin-top: 35px !important;
+    font-family: kanit;
+    color: #000;
+    padding: 10px 70px !important;
+    position: relative;
+    transition:1s;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    -ms-transition:1s;
+    -o-transition:1s;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.third-screen .row .col .title a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 5%;
+    height: 25%;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.third-screen .row .col .title a:hover::before {
+    width: 100%;
+    height: 100%;
+    
+}
+.third-screen .row .col .title a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 5%;
+    height: 25%;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.third-screen .row .col .title a:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.third-screen .row .col  .img {
+    height: 100%;
+    background: url('../img/person-combing-person-s-hair-1570807.jpg');
+    filter: grayscale(0%);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    
+    -webkit-filter: grayscale(10%);
+}
+/*fourth*/
+
+.fourth-screen {
+    height: 100vh;
+}
+.fourth-screen .row {
+    height: 100%;
+    
+}
+.fourth-screen .row .col {
+    height: 100%;
+    
+}
+.fourth-screen .row .col  .title {
+    height: 100%;
+  
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fourth-screen .row .col  .title .collection {
+    width: 80%;
+    margin:auto;
+    border: none !important;
+}
+.fourth-screen .row .col  .title .collection .collection-header {
+    border-bottom: none !important;
+    padding: 25px 0 !important;
+    
+    
+   
+    text-transform: uppercase;
+}
+.fourth-screen .row .col  .title .collection .collection-header h2 {
+    font-weight: bold;
+    font-family: kanit;
+}
+.fourth-screen .row .col  .title .collection .collection-item {
+    padding: 15px 0 !important;
+}
+.fourth-screen .row .col  .title .collection .collection-item h4 {
+    font-family: 'kanit';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+.fourth-screen .row .col  .title .collection .collection-item h4 span {
+    font-weight: lighter;
+    font-size: 16px;
+}
+.fourth-screen .row .col  .img {
+    height: 100%;
+    background: url('../img/set.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  
+}
+/*fourth end*/
+
+.fifth-screen {
+    height: 100vh;
+}
+.fifth-screen .row {
+    height: 100%;
+    
+}
+.fifth-screen .row .col {
+    height: 100%;
+    
+}
+.fifth-screen .row .col  .title {
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.fifth-screen .row .col  .title .gornji {
+  
+    width: 90%;
+    margin: auto;
+   
+}
+.fifth-screen .row .col  .title .donji {
+    width: 90% !important;
+}
+.fifth-screen .row .col  .title .gornji h3 {
+    text-align: center;
+    font-family: 'kanit';
+    text-transform: uppercase;
+    font-weight: bold;
+
+    
+}
+.fifth-screen .row .col  .title .gornji p {
+    text-align: center;
+    font-family: 'sarala';
+    padding: 15px 0 !important;
+    font-size: 18px;
+}
+.fifth-screen .row .col  .img {
+    height: 100%;
+    background: url('../img/person-walking-on-the-road-1563256.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  
+}
+.fifth-screen .row .col  .title .donji .col {
+    height: 200px !important;
+}
+.fifth-screen .row .col  .title .donji .col h4 {
+    font-family: 'kanit';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.fifth-screen .row .col  .title .donji .col ul li {
+    font-size: 18px;
+    margin-top: 10px !important;
+}
+.fifth-screen .row .col  .title .donji .copyright2 {
+    display: flex;
+    width: 100%;
+    height: 30px !important;
+    justify-content: center;
+    align-items: flex-start;
+ 
+} 
+.fifth-screen .row .col  .title .donji .copyright2 a {
+    text-decoration: none;
+}
+.fifth-screen .row .col  .title .donji .copyright2 a i {
+    color: #fff;
+    font-size: 30px !important;
+    margin-left: 10px !important;
+}
+.fifth-screen .row .col  .title .donji .copyright {
+    display: flex;
+    margin-top: 3rem !important;
+    justify-content: center;
+    align-items: flex-end;
+}
+.fifth-screen .row .col  .title .donji .col p {
+    font-family: sarala;
+    text-align: center !important;
+    margin: auto;
+}
+.fifth-screen .row .col  .title .donji .col:last-child {
+    
+    height: auto !important;
+}
+
+
+
+
+.sixth-screen {
+    height: 100vh;
+}
+.sixth-screen .row {
+    height: 100%;
+    
+}
+.sixth-screen .row .col {
+    height: 100%;
+    
+}
+.sixth-screen .row .col  .title {
+    height: 100%;
+  
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sixth-screen .row .col  .title .collection {
+    width: 80%;
+    margin:auto;
+    border: none !important;
+}
+.sixth-screen .row .col  .title .collection .collection-header {
+    border-bottom: none !important;
+    padding: 25px 0 !important;
+    
+    
+   
+    text-transform: uppercase;
+}
+.sixth-screen .row .col  .title .collection .collection-header h2 {
+    font-weight: bold;
+    font-family: kanit;
+}
+.sixth-screen .row .col  .title .collection .collection-item {
+    padding: 15px 0 !important;
+}
+.sixth-screen .row .col  .title .collection .collection-item h4 {
+    font-family: 'kanit';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+.sixth-screen .row .col  .title .collection .collection-item h4 span {
+    font-weight: lighter;
+    font-size: 16px;
+}
+.sixth-screen .row .col  .img {
+    height: 100%;
+    background: url('../img/person-wearing-round-white-analog-watch-at-10-09-1697214.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  
+}
+
+
+
+
+
+/*mobile responsive*/
+@media only screen and (max-width: 500px)  {
+    
+    .first-screen .row .col  .title  h1 {
+       font-size:40px;
+    }
+    .first-screen .row .col  .title  h3 {
+        font-size: 30px !important;
+        margin-top: 15px !important;
+    }
+    .first-screen .row .col  .title p {
+        width: 90% !important;
+    }
+    .second-screen .row .col  .title  h1 {
+        font-size:40px;
+     }
+     .second-screen .row .col  .title  h3 {
+         font-size: 30px !important;
+         margin-top: 15px !important;
+     }
+     .second-screen .row .col  .title p {
+         width: 90% !important;
+     }
+
+     .third-screen .row .col  .title  h1 {
+        font-size:40px;
+     }
+     .third-screen .row .col  .title  h3 {
+         font-size: 30px !important;
+         margin-top: 15px !important;
+     }
+     .third-screen .row .col  .title p {
+         width: 90% !important;
+     }
+     .fourth-screen .row .col  .title .collection .collection-header h2 {
+         text-align: center !important;
+         font-size: 40px;
+     }
+
+     .fourth-screen .row .col  .title .collection .collection-item h4 {
+         font-size: 18px;
+     }
+
+
+    .fifth-screen .row .col  .title .donji .col h4 {
+        font-family: 'kanit';
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .fifth-screen .row .col  .title .donji .col ul li {
+        font-size: 14px;
+        margin-top: 10px !important;
+    }
+    .first-screen  {
+       height: 500px !important;
+        
+    }
+    .second-screen  {
+       height:500px !important;
+        
+    }
+    .third-screen  {
+       height: 500px !important;
+        
+    }
+    .fourth-screen  {
+       height: 500px !important;
+        
+    }
+    .sixth-screen  {
+       height: 500px !important;
+        
+    }
+    .sixth-screen .row .col .title .collection .collection-header h2 {
+        
+        text-align: center;
+        font-size: 40px;
+    }
+    
+
+    
+}

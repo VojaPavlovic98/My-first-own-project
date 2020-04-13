@@ -1,0 +1,280 @@
+
+#menu-show {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 99;
+   
+}
+#menu-show .ham {
+    color: #000;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#menu-show .ham:hover{
+    transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    -moz-transform:scale(0.7);
+    -ms-transform:scale(0.7);
+    -o-transform:scale(0.7);
+}
+#ham-unutra {
+    
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#ham-unutra:hover {
+    transform: scale(1.4) rotate(90deg);
+    -webkit-transform: scale(1.4) rotate(90deg);
+    -moz-transform: scale(1.4) rotate(90deg);
+    -ms-transform: scale(1.4) rotate(90deg);
+    -o-transform: scale(1.4) rotate(90deg);
+}
+#nav-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#nav-mobile li a {
+    font-family: kanit;
+    font-size: 38px;
+    position: relative;
+    margin-top: 25px !important;
+    padding: 0;
+    text-transform: uppercase;
+}
+#nav-mobile li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    border-bottom: 0.5px solid #fff;
+    display: block;
+    height: 10%;
+    background: #fff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#nav-mobile li a:hover::before {
+    width: 100%;
+}
+body {
+    box-sizing: border-box;
+}
+
+
+/* o nama page start*/
+section.o-nama-showcase {
+   background: url('../img/salon.jpg');
+   height: 500px;
+   background-repeat: no-repeat;
+   background-position: center ;
+}
+
+section.o-nama-text .container  {
+    animation-duration: 3s;
+    
+}
+section.o-nama-text .container .row h3 {
+    font-family: kanit;
+    text-transform: uppercase;
+}
+section.o-nama-text .container .row .col h2 {
+    font-family: 'kanit';
+    text-transform: uppercase;
+}
+
+section.o-nama-text .container .row .col p {
+    font-family: kanit;
+    font-size: 20px;
+}
+section.o-nama-text .container .row .col .card {
+    margin-top: 2rem;
+}
+section.o-nama-text .container .row .col .card-panel{
+ 
+    min-height: 450px;
+}
+
+section.o-nama-text .container .row .col .card-panel h3 {
+    font-family: kanit;
+}
+section.o-nama-text .container .row .col .card-panel p {
+    font-family: kanit;
+}
+
+
+.fifth-screen .row,.fifth-screen .row .col {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.fifth-screen .row .col  .title {
+   
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+   
+}
+.fifth-screen .row .col  .title .gornji {
+  
+    width: 90%;
+    margin: auto;
+   
+}
+.fifth-screen .row .col  .title .donji {
+    width: 90% !important;
+}
+.fifth-screen .row .col  .title .gornji h3 {
+    text-align: center;
+    font-family: 'kanit';
+    text-transform: uppercase;
+    font-weight: bold;
+
+    
+}
+.fifth-screen .row .col  .title .gornji p {
+    text-align: center;
+    font-family: 'sarala';
+    padding: 15px 0 !important;
+    font-size: 18px;
+}
+.fifth-screen .row .col  .img {
+    height: 100%;
+    background: url('../img/person-walking-on-the-road-1563256.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  
+}
+.fifth-screen .row .col  .title .donji .col {
+    height: 200px !important;
+}
+.fifth-screen .row .col  .title .donji .col h4 {
+    font-family: 'kanit';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.fifth-screen .row .col  .title .donji .col ul li {
+    font-size: 18px;
+    margin-top: 10px !important;
+}
+
+.fifth-screen .row .col  .title .donji .copyright2 {
+    display: flex;
+    width: 100%;
+    height: 30px !important;
+    justify-content: center;
+    align-items: flex-start;
+ 
+} 
+.fifth-screen .row .col  .title .donji .copyright2 a {
+    text-decoration: none;
+}
+.fifth-screen .row .col  .title .donji .copyright2 a i {
+    color: #fff;
+    font-size: 30px !important;
+    margin-left: 10px !important;
+}
+.fifth-screen .row .col  .title .donji .copyright {
+    display: flex;
+   
+    justify-content: center;
+    align-items: flex-end;
+}
+.fifth-screen .row .col  .title .donji .col p {
+    font-family: sarala;
+    text-align: center !important;
+   
+}
+.fifth-screen .row .col  .title .donji .col:last-child {
+    
+    height: auto !important;
+}
+
+/*galerija start*/
+.galerija h2 {
+        font-family: 'Kanit';
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        
+}
+.galerija .container .row .col img {
+    /* background: #000; */
+    margin-top: 15px !important;
+}
+
+/*mobile responsive*/
+@media only screen and (max-width: 500px)  {
+
+
+
+
+    .fifth-screen .row .col  .title .donji .col h4 {
+        font-family: 'kanit';
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .fifth-screen .row .col  .title .donji .col ul li {
+        font-size: 14px;
+        margin-top: 10px !important;
+    }
+    .first-screen  {
+       height: 500px !important;
+        
+    }
+    .second-screen  {
+       height:500px !important;
+        
+    }
+    .third-screen  {
+       height: 500px !important;
+        
+    }
+    .fourth-screen  {
+       height: 500px !important;
+        
+    }
+    .sixth-screen  {
+       height: 500px !important;
+        
+    }
+    #menu-show .ham{
+        position: absolute;
+        left: 5px;
+        top: 30px;
+        z-index: 99;
+        font-size: 40px !important;
+        
+       
+    }
+    .galerija h2 {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    
+}
